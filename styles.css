@@ -27,7 +27,7 @@ ul {
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-color: #E6533C;
     color: #fff;
     border-radius: 5px;
@@ -38,14 +38,14 @@ ul {
 
 .btn2 {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border: 1px solid rgb(255, 255, 255);
-    
     color: #fff;
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 25px;
+    margin-left: 10%;
 }
 
 .desciption{
@@ -53,6 +53,7 @@ ul {
     color: #c7c7c7;
     margin-top: 5%;
     margin-bottom: 10%;
+    background: none;
 }
 /* Header styles */
 header {
@@ -218,31 +219,48 @@ h1, h2 {
     background-color: rgb(25, 25, 25);
     color: #fff;
     padding: 40px;
+    border-radius: 5%;
 }
 
 .extra-mile-content {
     flex-basis: 50%;
     text-align: left;
     padding-right: 40px;
+    background-color: rgb(25, 25, 25);
+}
+
+.extra-mile-title{
+   background: none;
+   font-size: 3.7em;
+   font-weight: 800;
 }
 
 .extra-mile-image {
     flex-basis: 50%;
-}
-
-.extra-mile-image img {
+    border-radius: 5%;
     max-width: 100%;
     height: auto;
+    background: none;
+}
+
+.centered-title{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 800;
 }
 
 /* BMI Calculator section */
 .bmi-container {
     display: flex;
     justify-content: space-between;
+    background: #2e2e2e;
+    
 }
 
 .bmi-chart, .bmi-form {
     flex-basis: 48%;
+    background: #2e2e2e;
+
 }
 
 .bmi-form form {
@@ -259,6 +277,7 @@ h1, h2 {
 .form-row input, .form-row select {
     width: 48%;
     padding: 10px;
+    color: #9c9c9c;
 }
 
 .form-row select:only-child {
@@ -270,6 +289,15 @@ h1, h2 {
     margin-top: 10px;
 }
 
+
+.desciption2{
+    font-size: medium;
+    color: #c7c7c7;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    background: none;
+    text-align: center;
+}
 
 /* Team section */
 .team-grid {
@@ -322,4 +350,128 @@ footer {
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive styles for small devices (up to 576px) */
+@media screen and (max-width: 576px) {
+    /* Header styles */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+        border: none;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .btn-home {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    /* Hero section */
+    #hero {
+        flex-direction: column;
+        background-image: none;
+    }
+
+    .hero-content {
+        flex-basis: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .hero-image {
+        flex-basis: 100%;
+    }
+
+    .hero-image img {
+        padding-left: 0;
+    }
+
+    .title {
+        font-size: 2.5em;
+    }
+
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn, .btn2 {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Habits section */
+    .habit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Extra mile section */
+    #extra-mile {
+        flex-direction: column;
+    }
+
+    .extra-mile-content {
+        flex-basis: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .extra-mile-title {
+        font-size: 2.5em;
+    }
+
+    /* BMI Calculator section */
+    .bmi-container {
+        flex-direction: column;
+    }
+
+    .bmi-chart, .bmi-form {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row input, .form-row select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Team section */
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer styles */
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-logo, .footer-links {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .link-group {
+        margin-bottom: 20px;
+    }
 }
