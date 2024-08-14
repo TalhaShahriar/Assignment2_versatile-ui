@@ -73,18 +73,18 @@ nav {
 nav ul {
     display: flex;
     border-radius: 25px;
-    border: 1px solid #fff;
-    padding: 1px;
+    border: 1px solid #ffffff80;
+    padding: 0.5px;
     align-items: center;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 20px;
     text-align: center;
 }
 
 .btn-home {
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-color: #E6533C;
     color: #ffffff;
     border-radius: 25px;
