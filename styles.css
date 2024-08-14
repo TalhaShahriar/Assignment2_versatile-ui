@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Inter:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Grey+Qo&display=swap');
 
 /* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #000;
 }
 
 body {
     font-family: "Inter", sans-serif;
     line-height: 1.6;
     color: #ffffff;
+    background-color: #000;
 }
 
 a {
@@ -25,39 +23,33 @@ ul {
     list-style: none;
 }
 
-.btn {
+.btn, .btn2 {
     display: inline-block;
     padding: 10px 30px;
-    background-color: #E6533C;
     color: #fff;
-    border-radius: 5px;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 25px;
+}
+
+.btn {
+    background-color: #E6533C;
 }
 
 .btn2 {
-    display: inline-block;
-    padding: 10px 30px;
-    border: 1px solid rgb(255, 255, 255);
-    color: #fff;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 25px;
+    border: 1px solid #fff;
     margin-left: 10%;
 }
 
-.desciption{
+.description {
     font-size: small;
     color: #c7c7c7;
     margin-top: 5%;
     margin-bottom: 10%;
-    background: none;
 }
+
 /* Header styles */
 header {
-    color: #fff;
     padding: 20px 0;
 }
 
@@ -79,23 +71,23 @@ nav {
 
 nav ul {
     display: flex;
-    border-radius: 5px;
-    border: 1px solid rgb(255, 255, 255);
-
+    border-radius: 25px;
+    border: 1px solid #fff;
+    padding: 5px;
+    align-items: center;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin: 0 10px;
     text-align: center;
 }
 
-.btn-home{
+.btn-home {
     padding: 10px 20px;
     background-color: #E6533C;
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 25px;
     text-transform: uppercase;
-    border-radius: 18px;
 }
 
 /* Main content styles */
@@ -113,24 +105,20 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
-
 /* Hero section */
-.title{
-    color: rgb(255, 255, 255);
-    font-family: Inter;
+.title {
+    color: #fff;
     font-size: 4.5em;
     font-weight: 900;
     line-height: 120%;
-    letter-spacing: 0%;
     text-align: left;
 }
 
-#shape{
+#shape {
     font-weight: 500;
     font-family: "Grey Qo", cursive;
     font-style: normal;
     font-size: 2em;
-    background: none;
 }
 
 #hero {
@@ -138,7 +126,9 @@ h1, h2 {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 60px;
-    background-image: linear-gradient(to right, rgb(95, 95, 95) , rgb(7, 7, 7));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    padding: 40px;
+    border-radius: 20px;
 }
 
 .hero-content {
@@ -158,15 +148,13 @@ h1, h2 {
     padding-left: 30%;
 }
 
-.hero-num{
+.hero-num {
     font-size: xx-large;
     font-weight: bolder;
-    background: none;
 }
 
 .card {
     position: absolute;
-    background-color: rgba(99, 99, 99, 0.8);
     padding: 17px;
     margin: auto;
     border-radius: 15px;
@@ -200,15 +188,14 @@ h1, h2 {
     max-width: 100%;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: #c7c7c7;
-    border: 1px solid rgb(110, 110, 110);
+    border: 1px solid #6e6e6e;
 }
 
-.habit_title{
+.habit_title {
     font-size: xx-large;
     font-weight: 800;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Extra mile section */
@@ -216,23 +203,21 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(25, 25, 25);
+    background-color: #191919;
     color: #fff;
     padding: 40px;
-    border-radius: 5%;
+    border-radius: 7%;
 }
 
 .extra-mile-content {
     flex-basis: 50%;
     text-align: left;
     padding-right: 40px;
-    background-color: rgb(25, 25, 25);
 }
 
-.extra-mile-title{
-   background: none;
-   font-size: 3.7em;
-   font-weight: 800;
+.extra-mile-title {
+    font-size: 3.7em;
+    font-weight: 800;
 }
 
 .extra-mile-image {
@@ -240,32 +225,44 @@ h1, h2 {
     border-radius: 5%;
     max-width: 100%;
     height: auto;
-    background: none;
 }
 
-.centered-title{
+.centered-title {
     text-align: center;
     font-size: 3em;
     font-weight: 800;
 }
 
 /* BMI Calculator section */
+#bmi-calculator {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    padding: 40px;
+    border-radius: 20px;
+}
+
 .bmi-container {
     display: flex;
     justify-content: space-between;
-    background: #2e2e2e;
-    
 }
 
 .bmi-chart, .bmi-form {
     flex-basis: 48%;
-    background: #2e2e2e;
-
 }
 
 .bmi-form form {
     display: flex;
     flex-direction: column;
+}
+
+.bmi-chart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bmi-chart th, .bmi-chart td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: left;
 }
 
 .form-row {
@@ -278,6 +275,7 @@ h1, h2 {
     width: 48%;
     padding: 10px;
     color: #9c9c9c;
+    background: none;
 }
 
 .form-row select:only-child {
@@ -289,13 +287,14 @@ h1, h2 {
     margin-top: 10px;
 }
 
-
-.desciption2{
+.description2, .description3 {
     font-size: medium;
     color: #c7c7c7;
     margin-top: 1%;
     margin-bottom: 5%;
-    background: none;
+}
+
+.description2 {
     text-align: center;
 }
 
@@ -318,8 +317,6 @@ h1, h2 {
 
 /* Footer styles */
 footer {
-    background-color: #000;
-    color: #fff;
     padding: 40px 0;
 }
 
@@ -352,11 +349,33 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Hamburger menu styles */
+.menu-toggle {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+}
+
+.hamburger-menu span {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
 /* Responsive styles for small devices (up to 576px) */
 @media screen and (max-width: 576px) {
     /* Header styles */
     nav {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -383,14 +402,13 @@ footer {
         background-image: none;
     }
 
-    .hero-content {
+    .hero-content, .hero-image {
         flex-basis: 100%;
-        padding-right: 0;
-        margin-bottom: 30px;
     }
 
-    .hero-image {
-        flex-basis: 100%;
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 30px;
     }
 
     .hero-image img {
@@ -423,8 +441,11 @@ footer {
         flex-direction: column;
     }
 
-    .extra-mile-content {
+    .extra-mile-content, .extra-mile-image {
         flex-basis: 100%;
+    }
+
+    .extra-mile-content {
         padding-right: 0;
         margin-bottom: 30px;
     }
@@ -474,45 +495,18 @@ footer {
     .link-group {
         margin-bottom: 20px;
     }
-}
 
-/* Hamburger menu styles */
-.menu-toggle {
-    display: none;
-}
-
-.hamburger-menu {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
-}
-
-.hamburger-menu span {
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Responsive styles for small devices (up to 576px) */
-@media (max-width: 576px) {
-    /* Header styles */
-    nav {
-        flex-wrap: wrap;
-    }
-
-    .hamburger-menu {
-        display: flex;
-        order: 1;
-    }
-
+    
     .logo {
         order: 0;
     }
 
+    /* Hamburger menu */
+    .hamburger-menu {
+        display: flex;
+        order: 1;
+    }
+    
     .nav-menu {
         flex-basis: 100%;
         order: 2;
@@ -520,84 +514,10 @@ footer {
         flex-direction: column;
         align-items: center;
         padding: 20px 0;
+        width: 100%;
     }
 
     .menu-toggle:checked ~ .nav-menu {
         display: flex;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .btn-home {
-        width: auto;
-        padding: 10px 20px;
-    }
-
-    /* Hero section */
-    #hero {
-        flex-direction: column;
-        background-image: none;
-    }
-
-    .hero-content, .hero-image {
-        flex-basis: 100%;
-    }
-
-    .hero-image img {
-        padding-left: 0;
-    }
-
-    .title {
-        font-size: 3em;
-    }
-
-    /* Habits section */
-    .habit-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Extra mile section */
-    #extra-mile {
-        flex-direction: column;
-    }
-
-    .extra-mile-content, .extra-mile-image {
-        flex-basis: 100%;
-    }
-
-    .extra-mile-title {
-        font-size: 2.5em;
-    }
-
-    /* BMI Calculator section */
-    .bmi-container {
-        flex-direction: column;
-    }
-
-    .bmi-chart, .bmi-form {
-        flex-basis: 100%;
-    }
-
-    /* Team section */
-    .team-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Footer styles */
-    .footer-content {
-        flex-direction: column;
-    }
-
-    .footer-logo, .footer-links {
-        flex-basis: 100%;
-        margin-bottom: 30px;
-    }
-
-    .footer-links {
-        flex-direction: column;
     }
 }
