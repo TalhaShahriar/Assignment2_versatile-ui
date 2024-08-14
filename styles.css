@@ -123,13 +123,19 @@ h1, h2 {
 }
 
 #hero {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(48, 48, 48, 0.05));
+    padding: 60px 0; /* Vertical padding only */
+    margin-bottom: 60px;
+ 
+}
+
+.hero-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 60px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(48, 48, 48, 0.05));
-    padding: 40px;
-    border-radius: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
 }
 
 .hero-content {
@@ -137,6 +143,7 @@ h1, h2 {
     text-align: left;
     padding-right: 40px;
 }
+
 
 .hero-image {
     flex-basis: 50%;
@@ -382,6 +389,7 @@ h1, h2 {
 /* Footer styles */
 footer {
     padding: 40px 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
 }
 
 .footer-content {
@@ -466,6 +474,14 @@ footer {
         background-image: none;
     }
 
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero-content, .hero-image {
+        flex-basis: 100%;
+    }
+
     .hero-content, .hero-image {
         flex-basis: 100%;
     }
@@ -473,6 +489,7 @@ footer {
     .hero-content {
         padding-right: 0;
         margin-bottom: 30px;
+        
     }
 
     .hero-image img {
@@ -547,6 +564,7 @@ footer {
     .nutrition-grid {
         grid-template-columns: 1fr;
     }
+
 
     /* BMI Calculator section */
     .bmi-container {
