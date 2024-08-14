@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Grey+Qo&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/miama');
+                
 /* Reset and base styles */
 * {
     margin: 0;
@@ -29,7 +30,7 @@ ul {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .btn {
@@ -45,7 +46,7 @@ ul {
     font-size: small;
     color: #c7c7c7;
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
 }
 
 /* Header styles */
@@ -58,8 +59,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: auto;
+    padding: 10px 40px;
 }
 
 .logo {
@@ -73,7 +74,7 @@ nav ul {
     display: flex;
     border-radius: 25px;
     border: 1px solid #fff;
-    padding: 5px;
+    padding: 1px;
     align-items: center;
 }
 
@@ -109,14 +110,14 @@ h1, h2 {
 .title {
     color: #fff;
     font-size: 4.5em;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 120%;
     text-align: left;
 }
 
 #shape {
     font-weight: 500;
-    font-family: "Grey Qo", cursive;
+    font-family: 'Miama', sans-serif;                                             
     font-style: normal;
     font-size: 2em;
 }
@@ -161,6 +162,12 @@ h1, h2 {
     background-color: #2e2e2e;
 }
 
+.card-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
 .card-bottom-left {
     bottom: 90px;
     left: 50px;
@@ -173,7 +180,7 @@ h1, h2 {
 
 /* Habits Section */
 #habits {
-    padding: 80px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -194,8 +201,8 @@ h1, h2 {
 .habit_title {
     font-size: xx-large;
     font-weight: 800;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 /* Extra mile section */
@@ -303,16 +310,39 @@ h1, h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    background: #202020;
 }
 
 .team-member {
-    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: #202020;
+}
+
+.team-member h3,
+.team-member p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    color: #ffffff;
+    margin: 0;
+
+}
+
+.team-member h3 {
+    bottom: 30px;
+}
+
+.team-member p {
+    bottom: 0;
 }
 
 .team-member img {
-    max-width: 100%;
-    border-radius: 10%;
-    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8%;
 }
 
 /* Footer styles */
@@ -415,8 +445,34 @@ footer {
         padding-left: 0;
     }
 
+    .card {
+        position: absolute;
+        padding: 10px; 
+        margin: auto;
+        border-radius: 10px;
+        background-color: #2e2e2e;
+        font-size: 14px;  
+        max-width: 120px; 
+    }
+
+    .hero-num {
+        font-size: large;  
+        font-weight: bold; 
+    }
+
+    .card-bottom-left {
+        bottom: 60px; 
+        left: 30px;  
+    }
+    
+    .card-top-right {
+        top: 100px; 
+        right: 0; 
+    }
+    
+
     .title {
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
     .cta-buttons {
